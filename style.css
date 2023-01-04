@@ -111,3 +111,21 @@ opacity: 0.5;
   font-family: 'HelveticaNeueCyr'; font-style: normal; font-weight: 400; font-size: 12px; line-height: 12px; display: flex; align-items: center;letter-spacing: 0.05em; color: rgba(140, 140, 140, 0.63); margin-left:15px
 }
 
+.lmt2{
+	
+	font-family: 'HelveticaNeueCyr'; 
+	src: url('./font/1/HelveticaNeueCyr-Medium.eot'); 
+	src: local('./font/1/HelveticaNeueCyr-Medium'), 
+	url('./font/1/HelveticaNeueCyr-Medium.eot?#iefix') 
+	format('embedded-opentype'),
+	url('./font/1/HelveticaNeueCyr-Medium.woff') format('woff'), 
+	url('./font/1/HelveticaNeueCyr-Medium.ttf') format('truetype'); 
+	font-weight: 550; 
+	font-size: 15px; 
+	line-height: 15px;
+	display: flex; 
+	align-items: center; 
+	color: #B2B3B9;
+	
+}
+
