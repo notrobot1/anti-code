@@ -149,10 +149,30 @@ color: #B2B3B9;
 }
 
 .np{
-	margin-left: 55px;
-	
+	margin-left: 55px;	
+	  display: flex;
+  align-items: center;
+}
+.np span{
+	margin-right: 100px ;
+	font-family: 'HelveticaNeueCyr'; font-style: normal; font-weight: 550; font-size: 14px; line-height: 14px; display: flex; align-items: center; letter-spacing: 0.01em; color: #FFFFFF;
+}
+.status{
+	font-family: 'HelveticaNeueCyr';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 14px;
+
+	/* identical to box height */
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.01em;
+
+	color: #FFFFFF;
 	
 }
+	
 
 .dad{
 	width: 444px;

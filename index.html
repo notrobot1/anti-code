@@ -423,16 +423,19 @@
 
 <!-- новый профиль -->
 <div class="collapse multi-collapse show" id="newp">
- <div class="np"><span>Название</span> <input type="text" value="" /></div>
- <div class="np"><span>Статус</span>  <select>
-										<option value="books">Книги</option>
-										<option value="html">HTML</option>
-										<option value="css">CSS</option>
-										<option value="php">PHP</option>
-										<option value="js">JavaScript</option>
+	<div style="" class="np"><span style="width: 66px; height: 14px;">Название</span> <input type="text" value="" /></div>
+ 
+	<div class="np"><span  style="width: 66px; height: 14px;">Статус</span> 
+										<select>
+										<option class= "status" value="">Книги</option>
+										<option class= "status" value="">HTML</option>
+										
 										</select>
 	</div>
- <div class="np"><span>Теги </span> <select>
+	
+    <div class="np">
+					<span style="width: 66px; height: 14px;">Теги </span>
+										<select >
 										<option value="books">Книги</option>
 										<option value="html">HTML</option>
 										<option value="css">CSS</option>
@@ -441,113 +444,120 @@
 										</select>
 	</div>
 										
-	<div class="np"> <span>Платформа </span> <div class="btn-group" role="group" aria-label="Basic example">
+	<div class="np"> 
+					<span style="width: 66px; height: 14px;">Платформа </span> 
+					<div style="width: 444px; height: 40px;" class="btn-group" role="group" aria-label="Basic example">
 											  <button type="button" class="btn btn-secondary">Windows</button>
 											  <button type="button" class="btn btn-secondary">MacOS</button>
 											  <button type="button" class="btn btn-secondary">Linux</button>
-											</div>
+					</div>
 	</div>	
-
-
-
-<div class="np">
-
- <span>Прокси </span>
-<span>
-<div class="btn-group" role="group" aria-label="Basic example">
-											  <button onclick='document.getElementById("collapse").classList.remove("show")' type="button" class="btn btn-secondary">Без прокси</button>
-											  <button type="button" class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false" aria-controls="collapseExample">Создать</button>
-											  <button type="button" class="btn btn-secondary">Выбрать</button>
-											</div>
-  
-</span>
-<div class="collapse" id="collapse">
-  
-   <div>
-   
-	<div>
-		<span>Протокол </span>
-		<span>
-												<a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Http</a>
-												<a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Socks4</a>
-												<a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Socks5</a>
-												<a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">SSH</a>
-	  
-		</span>
-	</div>
-	
-	
-	<div>
-		<span>Название</span> <input type="text" value="" />
-	</div>
-	
-	<div>
-		<span>Название</span> <input type="text" value="" />
-	</div>
-	
-		<div>
-		<span>Название</span> <input type="text" value="" />
-	</div>
-	
-	<div>
-		<span>Название</span> <input type="text" value="" />
-	</div>
-	
-	<div>
-		<span>Название</span> <input type="text" value="" />
-	</div>
-	
-	<div>
-		<span>Проверка соединения</span> <a class="btn btn-primary"  role="button" >Ошибка</a>
-	</div>
-	
-	<div class="dad"> 
-	
-	</div>
-
-	<div>
-		<span>Логин</span> <input type="text" value="" />
-	</div>
-	
-	<div>
-		<span>Пароль</span> <input type="text" value="" />
-	</div>
-	
-	<div>
-		<span>Токен</span> <input type="text" value="" />
-	</div>
-
-	
-   </div>
-   
-
-</div>
-
-</div>
-
-
-	<div class="np"> <span>WebGL </span> <div class="btn-group" role="group" aria-label="Basic example">
-											  <button type="button" class="btn btn-secondary">Выкл</button>
-											  <button type="button" class="btn btn-secondary">Реальный</button>
-											  <button type="button" class="btn btn-secondary">Шум</button>
-											</div>
-	</div>	
-
-
 
 
 
 	<div class="np">
-
- <span>Прокси </span>
-<span>
-<div class="btn-group" role="group" aria-label="Basic example">
-											  <button onclick='document.getElementById("collapse1").classList.remove("show")' type="button" class="btn btn-secondary">Реальный</button>
-											  <button type="button" class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapseExample">Вручную</button>
-											  
-											</div>
+			<span style="width: 66px; height: 14px;">Прокси </span>
+			<span>
+														<div class="btn-group" role="group" aria-label="Basic example">
+														  <button onclick='document.getElementById("collapse").classList.remove("show")' type="button" class="btn btn-secondary">Без прокси</button>
+														  <button type="button" class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false" aria-controls="collapseExample">Создать</button>
+														  <button type="button" class="btn btn-secondary">Выбрать</button>
+														</div>
+			  
+			</span>
+			
+	</div>		
+	
+	<!-- collapse -->
+	<div class="collapse" id="collapse">
   
-</span>
+				<div style="margin-left: 222px; margin-top: 30px;">
+				   
+						<div>
+							<span>Протокол </span>
+							<span>
+																	<a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Http</a>
+																	<a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Socks4</a>
+																	<a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Socks5</a>
+																	<a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">SSH</a>
+						  
+							</span>
+						</div>
+						
+						
+						<div>
+							<span>Название</span> <input type="text" value="" />
+						</div>
+						
+						<div>
+							<span>Название</span> <input type="text" value="" />
+						</div>
+						
+							<div>
+							<span>Название</span> <input type="text" value="" />
+						</div>
+						
+						<div>
+							<span>Название</span> <input type="text" value="" />
+						</div>
+						
+						<div>
+							<span>Название</span> <input type="text" value="" />
+						</div>
+						
+						<div>
+							<span>Проверка соединения</span> <a class="btn btn-primary"  role="button" >Ошибка</a>
+						</div>
+						
+						<div class="dad"> 
+						
+						</div>
+
+						<div>
+							<span>Логин</span> <input type="text" value="" />
+						</div>
+						
+						<div>
+							<span>Пароль</span> <input type="text" value="" />
+						</div>
+						
+						<div>
+							<span>Токен</span> <input type="text" value="" />
+					</div>
+
+	
+				</div>
+   
+
+
+	<!-- collapse end -->
+	</div>
+
+
+
+
+	<!-- <div class="np"> <span>WebGL </span> <div class="btn-group" role="group" aria-label="Basic example"> -->
+											  <!-- <button type="button" class="btn btn-secondary">Выкл</button> -->
+											  <!-- <button type="button" class="btn btn-secondary">Реальный</button> -->
+											  <!-- <button type="button" class="btn btn-secondary">Шум</button> -->
+											<!-- </div> -->
+	<!-- </div>	 -->
+
+
+
+
+
+	<!-- <div class="np"> -->
+
+ <!-- <span>Прокси </span> -->
+<!-- <span> -->
+<!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
+											  <!-- <button onclick='document.getElementById("collapse1").classList.remove("show")' type="button" class="btn btn-secondary">Реальный</button> -->
+											  <!-- <button type="button" class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapseExample">Вручную</button> -->
+											  
+											<!-- </div> -->
+  
+<!-- </span> -->
 <div class="collapse" id="collapse1">
   
   
