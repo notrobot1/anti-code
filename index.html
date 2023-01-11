@@ -410,9 +410,9 @@
 
    <a onClick="test();" class="rightM-font" style="margin-left:156px; color: white;" data-bs-toggle="collapse"role="button" > Новый профиль </a>
 
-   <a onClick="test1();" class="rightM-font" style="margin-left:41px; color: #6E6E6E; border-bottom: 1px dashed rgba(255, 255, 255, 0.2);" data-bs-toggle="collapse" role="button" > Из шаблона </a>
+   <a onClick="test1();" class="rightM-font" style="margin-left:41px; padding-bottom: 7px; color: #6E6E6E; border-bottom: 1px dashed rgba(255, 255, 255, 0.2);" data-bs-toggle="collapse" role="button" > Из шаблона </a>
 
-  <a onClick="test2();" class="rightM-font" style="margin-left:41px; color: #6E6E6E; border-bottom: 1px dashed rgba(255, 255, 255, 0.2);" data-bs-toggle="collapse" role="button"  > Массовый импорт </a>
+  <a onClick="test2();" class="rightM-font" style="margin-left:41px;  padding-bottom: 7px; color: #6E6E6E; border-bottom: 1px dashed rgba(255, 255, 255, 0.2);" data-bs-toggle="collapse" role="button"  > Массовый импорт </a>
 
 
 </label>
@@ -424,9 +424,9 @@
 
 
 <!-- новый профиль -->
-<div style="	overflow-y:scroll;" class="collapse multi-collapse show" id="newp">
+<div style="overflow-y:scroll; background: #0a0a0a;" class="collapse multi-collapse show" id="newp">
 
-<div style="margin-top: 60px; height: 80%;">
+<div style="margin-top: 60px; height: 100%; display: flex; flex-direction: column; justify-content: space-between; ">
 	<div  class="np"><span style="height: 14px;">Название</span> <input style="" type="text" value="" /></div>
  
 	<div class="np"><span  style="height: 14px;">Статус</span> 
@@ -441,13 +441,18 @@
 					<span style="height: 14px;">Теги </span>
 										<input type="text"  value="" />
 	</div>
-										
+			
+    <div style="width: 100%; height: 20px; margin-bottom: 20px;">
+	
+	</div>
+
+			
 	<div class="np"> 
 					<span style="height: 14px;">Платформа </span> 
-					<div style=" height: 40px; " class="btn-group" role="group" aria-label="Basic example">
-											  <button type="button" class="btn btn-secondary">Windows</button>
+					<div class="btn-groupm three" role="group" aria-label="Basic example">
+											  <button type="button"  class="btn btn-secondary">Windows</button>
 											  <button type="button" class="btn btn-secondary">MacOS</button>
-											  <button type="button" class="btn btn-secondary">Linux</button>
+											  <button type="button"  class="btn btn-secondary">Linux</button>
 					</div>
 	</div>	
 
@@ -456,7 +461,7 @@
 	<div class="np">
 			<span style="height: 14px;">Прокси </span>
 			
-														<div style="" class="btn-group" role="group" aria-label="Basic example">
+														<div style="" class="btn-groupm three" role="group" aria-label="Basic example">
 														  <button onclick='document.getElementById("collapse").classList.remove("show")' type="button" class="btn btn-secondary">Без прокси</button>
 														  <button type="button" class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false" aria-controls="collapseExample">Создать</button>
 														  <button type="button" class="btn btn-secondary">Выбрать</button>
@@ -536,7 +541,7 @@
 
 	<div class="np"> 
 											<span  style="height: 14px;">WebGL </span> 
-											<div style="" class="btn-group" role="group" aria-label="Basic example">
+											<div style="" class="btn-groupm three" role="group" aria-label="Basic example">
 											  <button type="button" class="btn btn-secondary">Выкл</button>
 											  <button type="button" class="btn btn-secondary">Реальный</button>
 											  <button type="button" class="btn btn-secondary">Шум</button>
@@ -550,7 +555,7 @@
 	<div class="np">
 		<span  style=" height: 14px;" >WebGL Инфо </span>
 	
-													<div style="" class="btn-group" role="group" aria-label="Basic example">
+													<div style="" class="btn-groupm two" role="group" aria-label="Basic example">
 													  <button type="button" class="btn btn-secondary">Реальный</button>
 													  <button type="button" class="btn btn-secondary">Вручную</button>  
 													</div>
@@ -563,7 +568,7 @@
 	<div class="np">
 		<span  style=" height: 14px;" >Clients Rects</span>
 	
-													<div style="" class="btn-group" role="group" aria-label="Basic example">
+													<div style="" class="btn-groupm two" role="group" aria-label="Basic example">
 													  <button type="button" class="btn btn-secondary">Реальный</button>
 													  <button type="button" class="btn btn-secondary">Шум</button>  
 													</div>
@@ -575,7 +580,7 @@
 	<div class="np">
 		<span  style=" height: 14px;" >Часовой пояс</span>
 	
-													<div style="" class="btn-group" role="group" aria-label="Basic example">
+													<div style="" class="btn-groupm two" role="group" aria-label="Basic example">
 													  <button type="button" class="btn btn-secondary">Авто</button>
 													  <button type="button" class="btn btn-secondary">Вручную</button>  
 													</div>
@@ -589,7 +594,7 @@
 	<div class="np">
 		<span  style=" height: 14px;" >Геолокация</span>
 	
-													<div style="" class="btn-group" role="group" aria-label="Basic example">
+													<div style="" class="btn-groupm two" role="group" aria-label="Basic example">
 													  <button type="button" class="btn btn-secondary">Авто</button>
 													  <button type="button" class="btn btn-secondary">Вручную</button>  
 													</div>
@@ -602,7 +607,7 @@
 	<div class="np">
 		<span  style=" height: 14px;" >Процессор</span>
 	
-													<div style="" class="btn-group" role="group" aria-label="Basic example">
+													<div style="" class="btn-groupm two" role="group" aria-label="Basic example">
 													  <button type="button" class="btn btn-secondary">Реальный</button>
 													  <button type="button" class="btn btn-secondary">Вручную</button>  
 													</div>
@@ -614,7 +619,7 @@
 	<div class="np">
 		<span  style=" height: 14px;" >Память</span>
 	
-													<div style="" class="btn-group" role="group" aria-label="Basic example">
+													<div style="" class="btn-groupm two" role="group" aria-label="Basic example">
 													  <button type="button" class="btn btn-secondary">Реальный</button>
 													  <button type="button" class="btn btn-secondary">Вручную</button>  
 													</div>
@@ -626,7 +631,7 @@
     <div class="np">
 		<span  style=" height: 14px;" >Экран</span>
 	
-													<div style="" class="btn-group" role="group" aria-label="Basic example">
+													<div style="" class="btn-groupm two" role="group" aria-label="Basic example">
 													  <button type="button" class="btn btn-secondary">Реальный</button>
 													  <button type="button" class="btn btn-secondary">Вручную</button>  
 													</div>
@@ -636,7 +641,7 @@
 	<div class="np">
 		<span  style=" height: 14px;" >Медиа</span>
 	
-													<div style="" class="btn-group" role="group" aria-label="Basic example">
+													<div style="" class="btn-groupm two" role="group" aria-label="Basic example">
 													  <button type="button" class="btn btn-secondary">Реальный</button>
 													  <button type="button" class="btn btn-secondary">Вручную</button>  
 													</div>
@@ -645,9 +650,9 @@
 	<div class="np">
 		<span  style=" height: 14px;" >Порты</span>
 	
-													<div style="" class="btn-group" role="group" aria-label="Basic example">
+													<div style="" class="btn-groupm two" role="group" aria-label="Basic example">
 													  <button type="button" class="btn btn-secondary">Реальный</button>
-													  <button type="button" class="btn btn-secondary">Вручную</button>  
+													  <button type="button" class="btn btn-secondary">Блокировать</button>  
 													</div>
 	</div>
 	

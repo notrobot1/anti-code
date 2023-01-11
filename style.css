@@ -152,11 +152,64 @@ color: #B2B3B9;
 
 .np{
 	display: grid;
-	 grid-template-columns: auto minmax(444px, 444px);
-	 align-items: center;
-	 margin-right: 50px;
+	grid-template-columns: auto minmax(444px, 444px);
+	align-items: center;
+	margin-right: 50px;
+	
+	margin-bottom: 20px;
+	
 	
 }
+
+.btn-groupm.three{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	
+	
+	
+	
+}
+
+.btn-groupm.two{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	
+	
+	
+	
+}
+
+
+.btn-groupm button{
+    border-radius: 0px; 
+	height: 40px;
+	background: rgba(217, 217, 217, 0.07);
+	font-family: 'HelveticaNeueCyr';
+	font-style: normal;
+	font-weight: 550;
+	font-size: 13px;
+	line-height: 13px;
+	/* identical to box height */
+	letter-spacing: 0.01em;
+	
+}
+
+.btn-groupm button:first-child{
+	
+	border-radius: 22px 0 0 22px;
+	
+	border: 0.6px solid rgba(255, 255, 255, 0.4);
+	
+}
+.btn-groupm button:last-child{
+	
+	border-radius: 0 22px 22px 0;
+	
+	border: 0.6px solid rgba(255, 255, 255, 0.4);
+}
+
+
+
 .np span{
 	margin-left: 55px;
     justify-self: start;
