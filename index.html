@@ -397,7 +397,7 @@
 
 <ul class="hidden-menu">
 
-
+<!-- header  -->
 <div style="width: 100%; height: 93px; background: #000000; margin: 0; padding: 0;">
 <label style="background: #000000;" class="" for="hmt">
   <span class="first">
@@ -419,14 +419,18 @@
 
 </div>
 
+<!-- header end -->
+
 
 
 <!-- новый профиль -->
-<div class="collapse multi-collapse show" id="newp">
-	<div style="" class="np"><span style="width: 66px; height: 14px;">Название</span> <input type="text" value="" /></div>
+<div style="	overflow-y:scroll;" class="collapse multi-collapse show" id="newp">
+
+<div style="margin-top: 60px; height: 80%;">
+	<div  class="np"><span style="height: 14px;">Название</span> <input style="" type="text" value="" /></div>
  
-	<div class="np"><span  style="width: 66px; height: 14px;">Статус</span> 
-										<select>
+	<div class="np"><span  style="height: 14px;">Статус</span> 
+										<select style="">
 										<option class= "status" value="">Книги</option>
 										<option class= "status" value="">HTML</option>
 										
@@ -434,19 +438,13 @@
 	</div>
 	
     <div class="np">
-					<span style="width: 66px; height: 14px;">Теги </span>
-										<select >
-										<option value="books">Книги</option>
-										<option value="html">HTML</option>
-										<option value="css">CSS</option>
-										<option value="php">PHP</option>
-										<option value="js">JavaScript</option>
-										</select>
+					<span style="height: 14px;">Теги </span>
+										<input type="text"  value="" />
 	</div>
 										
 	<div class="np"> 
-					<span style="width: 66px; height: 14px;">Платформа </span> 
-					<div style="width: 444px; height: 40px;" class="btn-group" role="group" aria-label="Basic example">
+					<span style="height: 14px;">Платформа </span> 
+					<div style=" height: 40px; " class="btn-group" role="group" aria-label="Basic example">
 											  <button type="button" class="btn btn-secondary">Windows</button>
 											  <button type="button" class="btn btn-secondary">MacOS</button>
 											  <button type="button" class="btn btn-secondary">Linux</button>
@@ -456,15 +454,15 @@
 
 
 	<div class="np">
-			<span style="width: 66px; height: 14px;">Прокси </span>
-			<span>
-														<div class="btn-group" role="group" aria-label="Basic example">
+			<span style="height: 14px;">Прокси </span>
+			
+														<div style="" class="btn-group" role="group" aria-label="Basic example">
 														  <button onclick='document.getElementById("collapse").classList.remove("show")' type="button" class="btn btn-secondary">Без прокси</button>
 														  <button type="button" class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false" aria-controls="collapseExample">Создать</button>
 														  <button type="button" class="btn btn-secondary">Выбрать</button>
 														</div>
 			  
-			</span>
+			
 			
 	</div>		
 	
@@ -475,7 +473,7 @@
 				   
 						<div>
 							<span>Протокол </span>
-							<span>
+							<span >
 																	<a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Http</a>
 																	<a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Socks4</a>
 																	<a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Socks5</a>
@@ -536,48 +534,158 @@
 
 
 
-	<!-- <div class="np"> <span>WebGL </span> <div class="btn-group" role="group" aria-label="Basic example"> -->
-											  <!-- <button type="button" class="btn btn-secondary">Выкл</button> -->
-											  <!-- <button type="button" class="btn btn-secondary">Реальный</button> -->
-											  <!-- <button type="button" class="btn btn-secondary">Шум</button> -->
-											<!-- </div> -->
-	<!-- </div>	 -->
+	<div class="np"> 
+											<span  style="height: 14px;">WebGL </span> 
+											<div style="" class="btn-group" role="group" aria-label="Basic example">
+											  <button type="button" class="btn btn-secondary">Выкл</button>
+											  <button type="button" class="btn btn-secondary">Реальный</button>
+											  <button type="button" class="btn btn-secondary">Шум</button>
+											</div>
+	</div>	
 
 
 
 
 
-	<!-- <div class="np"> -->
-
- <!-- <span>Прокси </span> -->
-<!-- <span> -->
-<!-- <div class="btn-group" role="group" aria-label="Basic example"> -->
-											  <!-- <button onclick='document.getElementById("collapse1").classList.remove("show")' type="button" class="btn btn-secondary">Реальный</button> -->
-											  <!-- <button type="button" class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapseExample">Вручную</button> -->
-											  
-											<!-- </div> -->
-  
-<!-- </span> -->
-<div class="collapse" id="collapse1">
-  
-  
+	<div class="np">
+		<span  style=" height: 14px;" >WebGL Инфо </span>
 	
-	<div>
-		<span>Пароль</span> <input type="text" value="" />
+													<div style="" class="btn-group" role="group" aria-label="Basic example">
+													  <button type="button" class="btn btn-secondary">Реальный</button>
+													  <button type="button" class="btn btn-secondary">Вручную</button>  
+													</div>
+		  
+		
+		
 	</div>
 	
-	<div>
-		<span>Токен</span> <input type="text" value="" />
-	</div>
-
 	
-   </div>
-   
+	<div class="np">
+		<span  style=" height: 14px;" >Clients Rects</span>
+	
+													<div style="" class="btn-group" role="group" aria-label="Basic example">
+													  <button type="button" class="btn btn-secondary">Реальный</button>
+													  <button type="button" class="btn btn-secondary">Шум</button>  
+													</div>
+		  
+		
+		
+	</div>
+	
+	<div class="np">
+		<span  style=" height: 14px;" >Часовой пояс</span>
+	
+													<div style="" class="btn-group" role="group" aria-label="Basic example">
+													  <button type="button" class="btn btn-secondary">Авто</button>
+													  <button type="button" class="btn btn-secondary">Вручную</button>  
+													</div>
+		  
+		
+		
+	</div>
+	
+	<!-- вставить коллапс -->
+	
+	<div class="np">
+		<span  style=" height: 14px;" >Геолокация</span>
+	
+													<div style="" class="btn-group" role="group" aria-label="Basic example">
+													  <button type="button" class="btn btn-secondary">Авто</button>
+													  <button type="button" class="btn btn-secondary">Вручную</button>  
+													</div>
+		  
+		
+		
+	</div>
+	
+	
+	<div class="np">
+		<span  style=" height: 14px;" >Процессор</span>
+	
+													<div style="" class="btn-group" role="group" aria-label="Basic example">
+													  <button type="button" class="btn btn-secondary">Реальный</button>
+													  <button type="button" class="btn btn-secondary">Вручную</button>  
+													</div>
+	</div>
+	
+	<!-- вставить колласп -->
+	
+	
+	<div class="np">
+		<span  style=" height: 14px;" >Память</span>
+	
+													<div style="" class="btn-group" role="group" aria-label="Basic example">
+													  <button type="button" class="btn btn-secondary">Реальный</button>
+													  <button type="button" class="btn btn-secondary">Вручную</button>  
+													</div>
+	</div>
+	
+	<!-- вставить колласп -->
+	
+	
+    <div class="np">
+		<span  style=" height: 14px;" >Экран</span>
+	
+													<div style="" class="btn-group" role="group" aria-label="Basic example">
+													  <button type="button" class="btn btn-secondary">Реальный</button>
+													  <button type="button" class="btn btn-secondary">Вручную</button>  
+													</div>
+	</div>
+	
+	
+	<div class="np">
+		<span  style=" height: 14px;" >Медиа</span>
+	
+													<div style="" class="btn-group" role="group" aria-label="Basic example">
+													  <button type="button" class="btn btn-secondary">Реальный</button>
+													  <button type="button" class="btn btn-secondary">Вручную</button>  
+													</div>
+	</div>
+	
+	<div class="np">
+		<span  style=" height: 14px;" >Порты</span>
+	
+													<div style="" class="btn-group" role="group" aria-label="Basic example">
+													  <button type="button" class="btn btn-secondary">Реальный</button>
+													  <button type="button" class="btn btn-secondary">Вручную</button>  
+													</div>
+	</div>
+	
+	<!-- вставить колласп -->
+	
+	
+	  <div class="np">
+		<span  style=" height: 14px;" >Do not track</span>
+	
+													<label class="switch">
+													  <input type="checkbox" checked>
+													  <span class="slider round"></span>
+													</label>
+	</div>
+	
+	
+	<div class="np">
+		<span  style=" height: 14px;" >Кастомные флаги запуска</span>
+	
+													<label class="switch">
+													  <input type="checkbox" checked>
+													  <span class="slider round"></span>
+													</label>
+	</div>
+	
+	<div class="np">
+		<span  style=" height: 14px;" >Заметка</span>
+	
+													<textarea>
+													</textarea>
+	</div>
+		
+
 
 </div>
 
-</div>
 
+</div>
 </div>
  
  
