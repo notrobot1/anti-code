@@ -430,8 +430,9 @@
 	<div  class="np"><span style="height: 14px;">Название</span> <input style="" type="text" value="" /></div>
  
 	<div class="np"><span  style="height: 14px;">Статус</span> 
+											
 										<select style="">
-										<option class= "status" value="">Книги</option>
+										<option class= "status" value="" style="">Ready</option>
 										<option class= "status" value="">HTML</option>
 										
 										</select>
@@ -476,57 +477,58 @@
   
 				<div style="margin-left: 222px; margin-top: 30px;">
 				   
-						<div>
+						<div style="width: 444px; padding: 17px; border-bottom: 0.6px solid rgba(255, 255, 255, 0.4);">
 							<span>Протокол </span>
 							<span >
-																	<a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Http</a>
-																	<a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Socks4</a>
-																	<a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Socks5</a>
-																	<a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">SSH</a>
+								<a  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Http</a>
+								<a  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Socks4</a>
+								<a  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Socks5</a>
+								<a  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">SSH</a>
 						  
 							</span>
 						</div>
 						
 						
-						<div>
+						<div style="width: 444px; padding: 17px; border-bottom: 0.6px solid rgba(255, 255, 255, 0.4);">
 							<span>Название</span> <input type="text" value="" />
 						</div>
 						
-						<div>
+						<div style="width: 444px; padding: 17px; border-bottom: 0.6px solid rgba(255, 255, 255, 0.4);">
 							<span>Название</span> <input type="text" value="" />
 						</div>
 						
-							<div>
+						<div style="width: 444px; padding: 17px; border-bottom: 0.6px solid rgba(255, 255, 255, 0.4);">
 							<span>Название</span> <input type="text" value="" />
 						</div>
 						
-						<div>
+						<div style="width: 444px; padding: 17px; border-bottom: 0.6px solid rgba(255, 255, 255, 0.4);">
 							<span>Название</span> <input type="text" value="" />
 						</div>
 						
-						<div>
+						<div style="width: 444px; padding: 17px; border-bottom: 0.6px solid rgba(255, 255, 255, 0.4);">
 							<span>Название</span> <input type="text" value="" />
 						</div>
 						
-						<div>
-							<span>Проверка соединения</span> <a class="btn btn-primary"  role="button" >Ошибка</a>
+						<div style="width: 444px; padding: 17px; border-bottom: 0.6px solid rgba(255, 255, 255, 0.4);">
+							<span>Проверка соединения</span> 
+							<a  role="button" >Ошибка</a>
 						</div>
 						
 						<div class="dad"> 
 						
 						</div>
 
-						<div>
+						<div style="width: 444px; padding: 17px; border-bottom: 0.6px solid rgba(255, 255, 255, 0.4);">
 							<span>Логин</span> <input type="text" value="" />
 						</div>
 						
-						<div>
+						<div style="width: 444px; padding: 17px; border-bottom: 0.6px solid rgba(255, 255, 255, 0.4);">
 							<span>Пароль</span> <input type="text" value="" />
 						</div>
 						
-						<div>
+						<div style="width: 444px; padding: 17px; border-bottom: 0.6px solid rgba(255, 255, 255, 0.4);">
 							<span>Токен</span> <input type="text" value="" />
-					</div>
+						</div>
 
 	
 				</div>
@@ -556,12 +558,33 @@
 		<span  style=" height: 14px;" >WebGL Инфо </span>
 	
 													<div style="" class="btn-groupm two" role="group" aria-label="Basic example">
-													  <button type="button" class="btn btn-secondary">Реальный</button>
-													  <button type="button" class="btn btn-secondary">Вручную</button>  
+													  <button type="button" onclick='document.getElementById("glinfo").classList.remove("show")' class="btn btn-secondary">Реальный</button>
+													  <button type="button" class="btn btn-secondary" data-bs-toggle="collapse" href="#glinfo" role="button" aria-expanded="false" aria-controls="glinfo">Вручную</button>  
 													</div>
 		  
 		
 		
+	</div>
+	
+	
+	<div class="collapse" id="glinfo">
+						<div style="width: 444px; padding: 17px; border-bottom: 0.6px solid rgba(255, 255, 255, 0.4);">
+							<span>Название</span> 
+										<select style="">
+										<option class= "status" value="">Книги</option>
+										<option class= "status" value="">HTML</option>
+										</select>
+						</div>
+						
+						<div style="width: 444px; padding: 17px; border-bottom: 0.6px solid rgba(255, 255, 255, 0.4);">
+							<span>Название</span> 
+							<select style="">
+										<option class= "status" value="">Книги</option>
+										<option class= "status" value="">HTML</option>
+										
+							</select>
+						</div>
+	
 	</div>
 	
 	
@@ -581,15 +604,46 @@
 		<span  style=" height: 14px;" >Часовой пояс</span>
 	
 													<div style="" class="btn-groupm two" role="group" aria-label="Basic example">
-													  <button type="button" class="btn btn-secondary">Авто</button>
-													  <button type="button" class="btn btn-secondary">Вручную</button>  
+													  <button type="button" onclick='document.getElementById("timezone").classList.remove("show")' class="btn btn-secondary">Авто</button>
+													  <button type="button" class="btn btn-secondary" data-bs-toggle="collapse" href="#timezone" role="button" aria-expanded="false" aria-controls="timezone">Вручную</button>  
 													</div>
 		  
 		
 		
 	</div>
 	
-	<!-- вставить коллапс -->
+	
+	<div class="collapse" id="timezone">
+	
+							<select style="">
+										<option class= "status" value="">часовой пояс</option>
+										<option class= "status" value="">HTML</option>
+										
+							</select>
+	</div>
+	
+	
+	<div class="np">
+		<span  style=" height: 14px;" >Язык</span>
+	
+													<div style="" class="btn-groupm two" role="group" aria-label="Basic example">
+													  <button type="button" onclick='document.getElementById("lang").classList.remove("show")' class="btn btn-secondary">Авто</button>
+													  <button type="button" class="btn btn-secondary" data-bs-toggle="collapse" href="#lang" role="button" aria-expanded="false" aria-controls="lang">Вручную</button>  
+													</div>
+		  
+		
+		
+	</div>
+	
+	<div class="collapse" id="lang">
+	
+							<select style="">
+										<option class= "status" value="">часовой пояс</option>
+										<option class= "status" value="">HTML</option>
+										
+							</select>
+	</div>
+	
 	
 	<div class="np">
 		<span  style=" height: 14px;" >Геолокация</span>
@@ -608,24 +662,47 @@
 		<span  style=" height: 14px;" >Процессор</span>
 	
 													<div style="" class="btn-groupm two" role="group" aria-label="Basic example">
-													  <button type="button" class="btn btn-secondary">Реальный</button>
-													  <button type="button" class="btn btn-secondary">Вручную</button>  
+													  <button type="button" onclick='document.getElementById("processor").classList.remove("show")' class="btn btn-secondary">Реальный</button>
+													  <button type="button" class="btn btn-secondary" data-bs-toggle="collapse" href="#processor" role="button" aria-expanded="false" aria-controls="processor" >Вручную</button>  
 													</div>
 	</div>
 	
-	<!-- вставить колласп -->
+	<div class="collapse" id="processor">
+	
+		 <div class="btn-group mr-2" role="group" aria-label="First group">
+			<input type="radio" value="2" checked name="tech"/> 2
+			<input type="radio" value="4" checked name="tech"/> 4
+			<input type="radio" value="6" checked name="tech"/> 6
+			<input type="radio" value="8" checked name="tech"/> 8
+			<input type="radio" value="12" checked name="tech"/> 12
+			<input type="radio" value="16" checked name="tech"/> 16
+			
+		  </div>
+	
+	
+	</div>
 	
 	
 	<div class="np">
 		<span  style=" height: 14px;" >Память</span>
 	
 													<div style="" class="btn-groupm two" role="group" aria-label="Basic example">
-													  <button type="button" class="btn btn-secondary">Реальный</button>
-													  <button type="button" class="btn btn-secondary">Вручную</button>  
+													  <button type="button" onclick='document.getElementById("memory").classList.remove("show")' class="btn btn-secondary">Реальный</button>
+													  <button type="button" class="btn btn-secondary" data-bs-toggle="collapse" href="#memory" role="button" aria-expanded="false" aria-controls="memory">Вручную</button>  
 													</div>
 	</div>
 	
-	<!-- вставить колласп -->
+	<div class="collapse" id="memory">
+	
+	 <div class="btn-group mr-2" role="group" aria-label="First group">
+			<input type="radio" value="2" checked name="tech"/> 2
+			<input type="radio" value="4" checked name="tech"/> 4
+	
+			<input type="radio" value="8" checked name="tech"/> 8
+			
+			
+		  </div>
+	</div>
 	
 	
     <div class="np">
@@ -651,12 +728,15 @@
 		<span  style=" height: 14px;" >Порты</span>
 	
 													<div style="" class="btn-groupm two" role="group" aria-label="Basic example">
-													  <button type="button" class="btn btn-secondary">Реальный</button>
-													  <button type="button" class="btn btn-secondary">Блокировать</button>  
+													  <button type="button" onclick='document.getElementById("ports").classList.remove("show")' class="btn btn-secondary">Реальный</button>
+													  <button type="button" class="btn btn-secondary"  data-bs-toggle="collapse" href="#ports" role="button" aria-expanded="false" aria-controls="ports">Блокировать</button>  
 													</div>
 	</div>
 	
-	<!-- вставить колласп -->
+	<div class="collapse" id="ports">
+	
+	ports
+	</div>
 	
 	
 	  <div class="np">
