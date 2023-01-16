@@ -270,6 +270,21 @@ color: #FFFFFF;
 
 }
 
+.nuclei{
+	
+	font-family: 'HelveticaNeueCyr';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 13px;
+
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.01em;
+color: #FFFFFF
+}
+
 .protocol span:last-child{
 	
 	justify-self: end;
