@@ -235,9 +235,103 @@ color: #B2B3B9;
 .dad{
 	width: 444px;
 height: 138px;
-background: green;
+
+
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.6px solid rgba(255, 255, 255, 0.5);
+
 	
 }
+
+
+.protocol{
+   width: 444px; padding: 17px; border-bottom: 0.6px solid rgba(255, 255, 255, 0.4); 
+   display: grid; grid-template-columns: 120.5px 2fr;
+
+
+	
+}
+
+.protocol span:first-child{
+font-family: 'HelveticaNeueCyr';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 13px;
+
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.01em;
+
+color: #FFFFFF;
+
+}
+
+.protocol span:last-child{
+	
+	justify-self: end;
+	
+}
+
+.protocol span{
+	
+	font-family: 'HelveticaNeueCyr';
+	font-style: normal;
+	font-weight: 700;
+    font-size: 13px;
+    line-height: 13px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+
+    
+}
+.Pmenu{
+	display: flex;
+  align-items: stretch;
+   align-items: center;
+  margin-left: 23px;
+   outline: none;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+.Pmenu:focus{
+	
+	outline: none;
+	text-decoration: none;
+}
+
+.Pcheck{
+	width: 444px; padding: 17px; font-family: 'HelveticaNeueCyr';font-style: normal;font-weight: 400; font-size: 10px; line-height: 10px;display: flex;align-items: center;letter-spacing: 0.01em;text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.5);
+	 display: flex;
+  justify-content: space-between;
+ 
+  
+}
+
+.Pcheck span{
+	padding-bottom: 2px;
+	 border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+	
+}
+
+.ellipse{
+	width: 10px;
+	height: 10px;
+	box-sizing: border-box;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	border-radius: 100px;
+	margin-right: 5px;
+	
+}
+
+
 
 
 
