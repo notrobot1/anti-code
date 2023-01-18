@@ -105,6 +105,16 @@ opacity: 0.5;
   
 }
 
+.left-menu li{
+	
+	list-style-type: none;
+	height: 36px; left: 15px;
+	opacity: 0.5; border-radius: 6px;
+	width: 200px;
+	
+}
+
+
 .a{
   background: rgba(255, 255, 255, 0.2);
 }
