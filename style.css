@@ -248,10 +248,12 @@ height: 138px;
 
 .protocol{
    width: 444px; padding: 17px; border-bottom: 0.6px solid rgba(255, 255, 255, 0.4); 
-   display: grid; grid-template-columns: 120.5px 2fr;
+   display: grid; grid-template-columns: auto 2fr;
+}
 
-
-	
+.protocol{
+   width: 444px; padding: 17px; border-bottom: 0.6px solid rgba(255, 255, 255, 0.4); 
+   display: grid; grid-template-columns: auto 2fr;	
 }
 
 .protocol span:first-child{
@@ -270,8 +272,14 @@ color: #FFFFFF;
 
 }
 
+/* ядра */
 .nuclei{
 	
+	 display: flex;
+  flex-wrap: wrap;
+ 
+  gap:0 20px;
+	 margin-left: auto;
 	font-family: 'HelveticaNeueCyr';
 font-style: normal;
 font-weight: 700;
@@ -283,6 +291,12 @@ display: flex;
 align-items: center;
 letter-spacing: 0.01em;
 color: #FFFFFF
+}
+
+.nuclei div{
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .protocol span:last-child{
@@ -299,7 +313,7 @@ color: #FFFFFF
     font-size: 13px;
     line-height: 13px;
 
-    /* identical to box height */
+    identical to box height
     display: flex;
     align-items: center;
     letter-spacing: 0.01em;
@@ -343,6 +357,62 @@ color: #FFFFFF
 	border: 2px solid rgba(255, 255, 255, 0.5);
 	border-radius: 100px;
 	margin-right: 5px;
+	
+}
+
+
+
+.toggle-button {
+ position: relative;
+ display: inline-block;
+ width: 30px;
+ height: 12px;
+ margin: 0;
+ vertical-align: top;
+ background: rgba(255, 255, 255, 0.5);
+ 
+ border-radius: 30px;
+ outline: none;
+ cursor: pointer;
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ appearance: none;
+}
+
+.toggle-button::after {
+  content: "";
+
+  display: inline-block;
+  position: absolute;
+  left: -1px;
+  top: -5px;
+
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border-radius: 50%;
+
+  transform: translateX(0);
+}
+
+.toggle-button:checked::after {
+  transform: translateX(calc(50% + 3px));
+  background-color: #fff;  
+}
+.toggle-button:checked {
+  background: #FFFFFF;
+}
+
+.new-profile input[type="text"]{
+	border: 0px;
+	border-bottom: 1px solid red;
+	background:transparent;
+	
+}
+
+.new-profile input[type="text"]::after{
+	border: 0px;
+	
 	
 }
 
