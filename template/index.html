@@ -3,601 +3,109 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title>main</title>
-	<link rel="stylesheet" href="/static/css/style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-	<link href="https://fonts.cdnfonts.com/css/helveticaneuecyr-2" rel="stylesheet">
-	<link href="https://fonts.cdnfonts.com/css/geometria" rel="stylesheet"> </head>
 
-<body> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
+    <title>SB Admin 2 - Bootstrap Admin Theme</title>
 
+    <!-- Bootstrap Core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- MetisMenu CSS -->
+    <link href="/static/metisMenu/metisMenu.min.css" rel="stylesheet">
 
+    <!-- Custom CSS -->
+    <link href="/static/css/css/sb-admin-2.css" rel="stylesheet">
 
+    <!-- Morris Charts CSS -->
+    <link href="/static/morrisjs/morris.css" rel="stylesheet">
 
+    <!-- Custom Fonts -->
+    <link href="/static/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-<input type="checkbox" id="hmt" class="hidden-menu-ticker">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-<!-- контейнер -->
-	<div  style="display: grid; grid-template-columns: 240px minmax(200px, 1fr);  grid-template-rows: 1363px;">
-		<!-- Лево -->
-		{{template "leftMenu"}}
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Auto</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+				<li class="nav-item text-nowrap">
+				  <a class="nav-link" href="#">Create</a>
+				</li>
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+				{{template "leftMenu"}}
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Dashboard</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+			
+			
 		
-		<!-- Лево конец -->
-		
-		
-		<!-- Право -->
-		<div style=" background:green;">
-			<!-- меню -->
-			<div style="display: flex; height: 94px; background:#111111; ">
-				<div style="margin-left: auto; display: flex; align-items: center; padding:25px;">
-					<div class="btn-group"> <button style="color: white; background: #4F5B5A; width: 182px; height: 38px; border-radius: 6px 0 0 6px;" type="button" class="btn">
-						<label style="display: grid; grid-template-columns: auto auto; gap: 5px;"  class="m" for="hmt">
-						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
-							<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
-						</svg>
-						<span>Создать профиль</span>
-						</label>
-						
-						</button>
-						<div style="background:red" class="vr"></div> <button type="button" style="color: white; background: #4F5B5A;  border-radius: 0 6px 6px 0;" class="btn dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
-						  <span class="visually-hidden">Toggle Dropdown</span>
-						</button>
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenuReference">
-							<li><a class="dropdown-item" href="#">Из шаблона</a></li>
-							<li><a class="dropdown-item" href="#">Массовый импорт</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<!-- меню конец -->
-			<!-- Содержимое -->
-			<div style="display: grid; grid-template-columns: 1fr; padding:25px;">
-				<!-- содержимое таблица -->
-				<div style="background: #1D1D1F; border-radius: 10px; overflow-x:auto;">
-					<div style="display: grid; grid-template-columns: 2fr 1fr; padding:15px; gap: 20px;">
-						<div style="display: grid; grid-template-columns: auto auto auto auto auto auto; gap: 14px;"> <button type="button" class="table-btn">Передать в автозалив</button> <button type="button" class="table-btn">Передать пользователю</button> <button type="button" class="table-btn">Отправить на фарм</button> <button type="button" class="table-btn">Изменить прокси</button> <button type="button" class="table-btn">Экспорт куки</button> <button type="button" class="table-btn">Теги</button> </div>
-						<div style="display: grid; grid-template-columns: auto auto; margin-left:auto; gap: 20px;"> <button type="button" class="table-btn">Запустить профили</button> <button type="button" class="table-btn">Остановить профили</button> </div>
-					</div>
-					<table style="color: white;  border-collapse: collapse;" class="table">
-						<thead>
-							<tr>
-								<th scope="col"><input type="checkbox" /></th>
-								<th style="width:200px;" scope="col">Название профиля</th>
-								<th style="width:155px;" scope="col">Название прокси</th>
-								<th style="width:236px;" scope="col">Заметка</th>
-								<th style="width:164px;" scope="col">Теги</th>
-								<th style="width:270px;" scope="col">Статус</th>
-								<th style="width:271px;" scope="col">01.12.2020-01.02.2022</th>
-								<th style="width:152px;" scope="col">Запуск</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th scope="col"><input type="checkbox" /></th>
-								<td>Mark</td>
-								<td>Otto</td>
-								<td>@mdo</td>
-								<td>Mark</td>
-								<td>Otto</td>
-								<td>@mdo</td>
-								<td>@mdo</td>
-							</tr>
-							<tr>
-								<th scope="col"><input type="checkbox" /></th>
-								<td>Mark</td>
-								<td>Otto</td>
-								<td>@mdo</td>
-								<td>Mark</td>
-								<td>Otto</td>
-								<td>@mdo</td>
-								<td>@mdo</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<!-- Содержимое таблица конец -->
-			</div>
-			<!-- Содержимое конец	 -->
-		</div>
-		<!-- Право конец -->
-	</div>
-	<ul class="hidden-menu">
-		<!-- header  -->
-		<div style="position: fixed; width: 100%; height: 93px; background: #000000; margin: 0; padding: 0;"> <label style="background: #000000;" class="" for="hmt">
-  <span class="first">
-  <svg style="margin-left:55px; margin-top: 37px; margin-bottom: 36px; width: 20px; height: 20px;" width="20" height="20" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-	<line y1="-1" x2="27.1988" y2="-1" transform="matrix(0.72854 0.685003 -0.72854 0.685003 0.184814 2.36877)" stroke="#4E4E4E" stroke-width="2"/>
-	<line y1="-1" x2="27.1991" y2="-1" transform="matrix(-0.728686 0.684848 -0.728686 -0.684848 19.8196 1)" stroke="#4E4E4E" stroke-width="2"/>
-   </svg>
-  </span>
-  
+			<div class="row">
+               {{template "content"}}
+            </div>
+			
+			
+			
+            <!-- /.row -->
+          
+        </div>
+        <!-- /#page-wrapper -->
 
-   <a onClick="test();" class="rightM-font" style="margin-left:156px; color: white;" data-bs-toggle="collapse"role="button" > Новый профиль </a>
+    </div>
+    <!-- /#wrapper -->
 
-   <a onClick="test1();" class="rightM-font" style="margin-left:41px; padding-bottom: 7px; color: #6E6E6E; border-bottom: 1px dashed rgba(255, 255, 255, 0.2);" data-bs-toggle="collapse" role="button" > Из шаблона </a>
+    <!-- jQuery -->
+    <script src="/static/jquery/jquery.min.js"></script>
 
-  <a onClick="test2();" class="rightM-font" style="margin-left:41px;  padding-bottom: 7px; color: #6E6E6E; border-bottom: 1px dashed rgba(255, 255, 255, 0.2);" data-bs-toggle="collapse" role="button"  > Массовый импорт </a>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
 
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="/static/metisMenu/metisMenu.min.js"></script>
 
-</label> </div>
-		<!-- header end -->
-		<!-- новый профиль -->
-		<div style="overflow-y:scroll; padding-top: 153px; background: #0a0a0a; height: 100%" class="new-profile collapse multi-collapse show" id="newp">
+    <!-- Morris Charts JavaScript -->
+    <script src="/static/raphael/raphael.min.js"></script>
+    <script src="/static/morrisjs/morris.min.js"></script>
+    <script src="/static/data/morris-data.js"></script>
 
-			<!-- <div style="margin-top: 60px;"> -->
-				<div  class="np"><span style="height: 14px;">Название</span> <input style="" type="text" value="" /></div>
-			 
-				<div class="np"><span  style="height: 14px;">Статус</span> 
-											
-					<select class="form-select" aria-label="Default select example">
-						
-						<option data-content="<i class='fa fa-address-book-o' aria-hidden='true'></i>Option1" selected>Ready</option>
-						<option value="1">One </option>
-						<option value="2">Two</option>
-						<option value="3">Three</option>
-					  </select>
-													
-				</div>
-				
-				<div class="np">
-								<span style="height: 14px;">Теги </span><input type="text"  value="" />
-				</div>
-						
-				<div style="width: 100%; height: 20px; margin-bottom: 20px;">
-				
-				</div>
-			
-						
-				<div class="np"> 
-								<span style="height: 14px;">Платформа </span> 
-								<div class="btn-groupm three" role="group" aria-label="Basic example">
-										 <button type="button"  class="btn btn-secondary">Windows</button>
-														  <button type="button" class="btn btn-secondary">MacOS</button>
-														  <button type="button"  class="btn btn-secondary">Linux</button>
-								</div>
-				</div>	
-			
-			
-			
-				<div class="np">
-						<span style="height: 14px;">Прокси </span>
-						
-																	<div style="" class="btn-groupm three" role="group" aria-label="Basic example">
-																	  <button onclick='document.getElementById("collapse").classList.remove("show")' type="button" class="btn btn-secondary">Без прокси</button>
-																	  <button type="button" class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false" aria-controls="collapseExample">Создать</button>
-																	  <button type="button" class="btn btn-secondary">Выбрать</button>
-																	</div>
-						  
-						
-						
-				</div>		
-				
-				<!-- collapse proxy-->
-				<div style="padding-bottom: 60px;" class="collapse" id="collapse">
-			  
-							<div style="margin-left: 222px; margin-top: 30px; ">
-							   
-									<div class="protocol">
-										<span>Протокол </span>
-										<div class="btn-group mr-2 nuclei" role="group" >
-											<div><input style="margin:5px;" type="radio" value="2" checked name="tech"/> <span>Http</span></div>
-											<div><input style="margin:5px;" type="radio" value="4" checked name="tech"/> <span>Socket4</span></div>
-											<div><input style="margin:5px;" type="radio" value="8" checked name="tech"/> <span>Socket5</span></div>
-											<div><input style="margin:5px;" type="radio" value="8" checked name="tech"/> <span>SSH</span></div>
-											
-										</div>
-										
-									</div>
-									
-									
-									<div class="protocol">
-										<span>Хост </span> <input type="text" value="" />
-									</div>
-									
-									<div class="protocol">
-										<span>Порт</span> <input type="text" value="" />
-									</div>
-									
-									<div class="protocol">
-										<span>Логин</span> <input type="text" value="" />
-									</div>
-									
-									<div  class="protocol">
-										<span>Пароль</span> <input type="text" value="" />
-									</div>
-									
-									<div class="protocol">
-										<span>Ссылка для смены ip</span> <input type="text" value="" />
-									</div>
-									
-									<div class="Pcheck">
-										<span style="cursor: pointer;">
-										<svg style="margin-right: 7.5px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
-											<path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
-										  </svg>
-										Проверка соединения</span>
-										<button type="button" style="color: #7C4C4A; padding: 10px; border-radius: 30px; width: 82px; height: 29px;  background: transparent; border: 1px solid #7C4C4A;">Ошибка</button>
-									</div>
-									
-									<div style="width: 100%; height: 20px; margin-bottom: 20px;">
-				
-									</div>
-
-									<div class="dad"> 
-
-
-										<div style="display: flex; flex-direction: column; justify-content: space-between;">
-											<div style=" display: flex; justify-content: center;">
-												<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M7.98828 11.1621C7.93246 11.1084 7.88805 11.0439 7.85772 10.9726C7.82739 10.9013 7.81175 10.8246 7.81176 10.7471C7.81175 10.6696 7.82739 10.5929 7.85772 10.5216C7.88805 10.4502 7.93246 10.3858 7.98828 10.332C8.04118 10.2765 8.10482 10.2323 8.17532 10.202C8.24582 10.1718 8.32173 10.1562 8.39844 10.1562C8.47514 10.1562 8.55105 10.1718 8.62156 10.202C8.69206 10.2323 8.75569 10.2765 8.80859 10.332L11.9141 13.4277V3.90625C11.9141 3.75085 11.9758 3.60181 12.0857 3.49193C12.1956 3.38204 12.3446 3.32031 12.5 3.32031C12.6554 3.32031 12.8044 3.38204 12.9143 3.49193C13.0242 3.60181 13.0859 3.75085 13.0859 3.90625V13.4277L16.1914 10.332C16.2443 10.2765 16.3079 10.2323 16.3784 10.202C16.4489 10.1718 16.5249 10.1562 16.6016 10.1562C16.6783 10.1562 16.7542 10.1718 16.8247 10.202C16.8952 10.2323 16.9588 10.2765 17.0117 10.332C17.0675 10.3858 17.1119 10.4502 17.1423 10.5216C17.1726 10.5929 17.1882 10.6696 17.1882 10.7471C17.1882 10.8246 17.1726 10.9013 17.1423 10.9726C17.1119 11.0439 17.0675 11.1084 17.0117 11.1621L12.9102 15.2539C12.8573 15.3095 12.7936 15.3537 12.7231 15.3839C12.6526 15.4141 12.5767 15.4297 12.5 15.4297C12.4233 15.4297 12.3474 15.4141 12.2769 15.3839C12.2064 15.3537 12.1427 15.3095 12.0898 15.2539L7.98828 11.1621ZM21.0938 14.2578C20.9383 14.2578 20.7893 14.3195 20.6794 14.4294C20.5695 14.5393 20.5078 14.6883 20.5078 14.8438V20.3125C20.5078 20.3643 20.4872 20.414 20.4506 20.4506C20.414 20.4872 20.3643 20.5078 20.3125 20.5078H4.6875C4.6357 20.5078 4.58602 20.4872 4.54939 20.4506C4.51276 20.414 4.49219 20.3643 4.49219 20.3125V14.8438C4.49219 14.6883 4.43046 14.5393 4.32057 14.4294C4.21069 14.3195 4.06165 14.2578 3.90625 14.2578C3.75085 14.2578 3.60181 14.3195 3.49193 14.4294C3.38204 14.5393 3.32031 14.6883 3.32031 14.8438V20.3125C3.32031 20.6751 3.46436 21.0229 3.72075 21.2792C3.97715 21.5356 4.3249 21.6797 4.6875 21.6797H20.3125C20.6751 21.6797 21.0229 21.5356 21.2792 21.2792C21.5356 21.0229 21.6797 20.6751 21.6797 20.3125V14.8438C21.6797 14.6883 21.618 14.5393 21.5081 14.4294C21.3982 14.3195 21.2492 14.2578 21.0938 14.2578Z" fill="white" fill-opacity="0.5"/>
-												</svg>
-											</div>
-											<div style=" display: flex; justify-content: center; font-family: 'HelveticaNeueCyr';
-											font-style: normal;
-											font-weight: 400;
-											font-size: 13px;
-											line-height: 13px;
-											
-											/* identical to box height */
-											display: flex;
-											align-items: center;
-											letter-spacing: 0.01em;
-											
-											color: rgba(255, 255, 255, 0.5); margin-bottom: 24px; margin-top: 9;">
-												<span>Вставить куки или перетащите файл drag and drop</span>
-											</div>
-												
-											<div style=" display: flex; justify-content: center;">
-												<button type="button" style="color: #7C4C4A; padding: 10px; border-radius: 30px; width: 114px; height: 23px; background: rgba(217, 217, 217, 0.07);; border: 1px solid #7C4C4A; font-family: 'HelveticaNeueCyr';
-												font-style: normal;
-												font-weight: 400;
-												font-size: 10px;
-												line-height: 10px;
-												letter-spacing: 0.01em;
-												display: flex;
-												align-items: center;
-												justify-content: center;
-												color: #FFFFFF; border: 1px solid rgba(255, 255, 255, 0.2);">Куки из файла</button>
-											</div>										
-										</div>
-									</div>
-			
-									<div class="protocol">
-										<span>Логин</span> <input type="text" value="" />
-									</div>
-									
-									<div class="protocol">
-										<span>Пароль</span> <input type="text" value="" />
-									</div>
-									
-									<div class="protocol">
-										<span>Токен</span> <input type="text" value="" />
-									</div>
-			
-				
-							</div>
-			   
-			
-			
-				<!-- collapse end -->
-				</div>
-			
-			
-			
-			
-				<div class="np"> 
-														<span  style="height: 14px;">WebGL </span> 
-														<div style="" class="btn-groupm three" role="group" aria-label="Basic example">
-														  <button type="button" class="btn btn-secondary">Выкл</button>
-														  <button type="button" class="btn btn-secondary">Реальный</button>
-														  <button type="button" class="btn btn-secondary">Шум</button>
-														</div>
-				</div>	
-			
-			
-			
-			
-			
-				<div class="np">
-					<span  style=" height: 14px;" >WebGL Инфо </span>
-				
-																<div style="" class="btn-groupm two" role="group" aria-label="Basic example">
-																  <button type="button" onclick='document.getElementById("glinfo").classList.remove("show")' class="btn btn-secondary">Реальный</button>
-																  <button type="button" class="btn btn-secondary" data-bs-toggle="collapse" href="#glinfo" role="button" aria-expanded="false" aria-controls="glinfo">Вручную</button>  
-																</div>
-					  
-					
-					
-				</div>
-				
-				
-				<div style="padding-bottom: 60px;" class="collapse" id="glinfo">
-					<div style="margin-left: 222px; margin-top: 30px; ">
-
-
-									<div class="protocol">
-										<span>Производитель</span> 
-													<select style="">
-													<option class= "status" value="">Книги</option>
-													<option class= "status" value="">HTML</option>
-													</select>
-									</div>
-									
-									<div class="protocol">
-										<span>Видеокарта</span> 
-										<select style="">
-													<option class= "status" value="">Книги</option>
-													<option class= "status" value="">HTML</option>
-													
-										</select>
-									</div>
-					</div>
-				</div>
-				
-				
-				<div class="np">
-					<span  style=" height: 14px;" >Clients Rects</span>
-				
-																<div style="" class="btn-groupm two" role="group" aria-label="Basic example">
-																  <button type="button" class="btn btn-secondary">Реальный</button>
-																  <button type="button" class="btn btn-secondary">Шум</button>  
-																</div>
-					  
-					
-					
-				</div>
-				
-				<div class="np">
-					<span  style=" height: 14px;" >Часовой пояс</span>
-				
-																<div style="" class="btn-groupm two" role="group" aria-label="Basic example">
-																  <button type="button" onclick='document.getElementById("timezone").classList.remove("show")' class="btn btn-secondary">Авто</button>
-																  <button type="button" class="btn btn-secondary" data-bs-toggle="collapse" href="#timezone" role="button" aria-expanded="false" aria-controls="timezone">Вручную</button>  
-																</div>
-					  
-					
-					
-				</div>
-				
-				
-				<div style="padding-bottom: 60px;" class="collapse" id="timezone">
-					<div style="margin-left: 222px; margin-top: 30px; ">
-									<div style="width: 444px; padding: 17px; border-bottom: 0.6px solid rgba(255, 255, 255, 0.4)"> 
-										<select style="width: 100%">
-													<option class= "status" value="">часовой пояс</option>
-													<option class= "status" value="">HTML</option>
-													
-										</select>
-									</div>
-						
-					</div>
-				</div>
-				
-				
-				<div class="np">
-					<span  style=" height: 14px;" >Язык</span>
-				
-																<div style="" class="btn-groupm two" role="group" aria-label="Basic example">
-																  <button type="button" onclick='document.getElementById("lang").classList.remove("show")' class="btn btn-secondary">Авто</button>
-																  <button type="button" class="btn btn-secondary" data-bs-toggle="collapse" href="#lang" role="button" aria-expanded="false" aria-controls="lang">Вручную</button>  
-																</div>
-					  
-					
-					
-				</div>
-				
-				<div style="padding-bottom: 60px;"  class="collapse" id="lang">
-					<div style="margin-left: 222px; margin-top: 30px; ">
-						<div style="width: 444px; padding: 17px; border-bottom: 0.6px solid rgba(255, 255, 255, 0.4)"> 
-										<select style="width: 100%">
-													<option class= "status" value="">часовой пояс</option>
-													<option class= "status" value="">HTML</option>
-													
-										</select>
-						</div>
-					</div>
-				</div>
-				
-				
-				<div class="np">
-					<span  style=" height: 14px;" >Геолокация</span>
-				
-																<div style="" class="btn-groupm two" role="group" aria-label="Basic example">
-																  <button type="button" class="btn btn-secondary">Авто</button>
-																  <button type="button" class="btn btn-secondary">Вручную</button>  
-																</div>
-					  
-					
-					
-				</div>
-				
-				
-				<div class="np">
-					<span  style=" height: 14px;" >Процессор</span>
-				
-																<div style="" class="btn-groupm two" role="group" aria-label="Basic example">
-																  <button type="button" onclick='document.getElementById("processor").classList.remove("show")' class="btn btn-secondary">Реальный</button>
-																  <button type="button" class="btn btn-secondary" data-bs-toggle="collapse" href="#processor" role="button" aria-expanded="false" aria-controls="processor" >Вручную</button>  
-																</div>
-				</div>
-				
-				<div style="padding-bottom: 60px;" class="collapse" id="processor">
-					<div style="margin-left: 222px; margin-top: 30px; ">
-
-						<div class="protocol">
-							 
-							<span>Ядра </span>
-								<div class="btn-group mr-2 nuclei" role="group">
-									<div><input style="margin:5px;" type="radio" value="2" checked name="tech"/> <span>2</span></div>
-									<div><input style="margin:5px;" type="radio" value="4" checked name="tech"/> <span>4</span></div>
-									<div><input style="margin:5px;" type="radio" value="6" checked name="tech"/> <span>6</span></div>
-									<div><input style="margin:5px;" type="radio" value="8" checked name="tech"/> <span>8</span></div>
-									<div><input style="margin:5px;" type="radio" value="12" checked name="tech"/> <span>12</span></div>
-									<div><input style="margin:5px;" type="radio" value="16" checked name="tech"/> <span>16</span></div>
-									
-								</div>
-							
-						</div>
-
-						<div class="protocol">
-							<span>ГБ</span> 
-							<div class="btn-group mr-2 nuclei" role="group" >
-								    <div><input style="margin:5px;" type="radio" value="2" checked name="tech"/> <span>2</span></div>
-									<div><input style="margin:5px;" type="radio" value="4" checked name="tech"/> <span>4</span></div>
-									
-									<div><input style="margin:5px;" type="radio" value="8" checked name="tech"/> <span>8</span></div>
-									
-							</div>
-						</div>
-
-
-					</div>
-				
-				
-				</div>
-				
-				
-				<div class="np">
-					<span  style=" height: 14px;" >Память</span>
-				
-																<div style="" class="btn-groupm two" role="group" aria-label="Basic example">
-																  <button type="button" onclick='document.getElementById("memory").classList.remove("show")' class="btn btn-secondary">Реальный</button>
-																  <button type="button" class="btn btn-secondary" data-bs-toggle="collapse" href="#memory" role="button" aria-expanded="false" aria-controls="memory">Вручную</button>  
-																</div>
-				</div>
-				
-				<div class="collapse" id="memory">
-				
-				 <div class="btn-group mr-2" role="group" aria-label="First group">
-						<input type="radio" value="2" checked name="tech"/> 2
-						<input type="radio" value="4" checked name="tech"/> 4
-				
-						<input type="radio" value="8" checked name="tech"/> 8
-						
-						
-					  </div>
-				</div>
-				
-				
-				<div class="np">
-					<span  style=" height: 14px;" >Экран</span>
-				
-																<div style="" class="btn-groupm two" role="group" aria-label="Basic example">
-																  <button type="button" class="btn btn-secondary">Реальный</button>
-																  <button type="button" class="btn btn-secondary">Вручную</button>  
-																</div>
-				</div>
-				
-				
-				<div class="np">
-					<span  style=" height: 14px;" >Медиа</span>
-				
-																<div style="" class="btn-groupm two" role="group" aria-label="Basic example">
-																  <button type="button" class="btn btn-secondary">Реальный</button>
-																  <button type="button" class="btn btn-secondary">Вручную</button>  
-																</div>
-				</div>
-				
-				<div class="np">
-					<span  style=" height: 14px;" >Порты</span>
-				
-																<div style="" class="btn-groupm two" role="group" aria-label="Basic example">
-																  <button type="button" onclick='document.getElementById("ports").classList.remove("show")' class="btn btn-secondary">Реальный</button>
-																  <button type="button" class="btn btn-secondary"  data-bs-toggle="collapse" href="#ports" role="button" aria-expanded="false" aria-controls="ports">Блокировать</button>  
-																</div>
-				</div>
-				
-				<div class="collapse" id="ports">
-				
-				ports
-				</div>
-				
-				
-				  <div class="np">
-					<span  style=" height: 14px;" >Do not track</span>
-				
-					<input type="checkbox" id="toggle-button" class="toggle-button">
-				</div>
-				
-				
-				<div class="np">
-					<span  style=" height: 14px;" >Кастомные флаги запуска</span>
-				
-					<input type="checkbox" id="toggle-button" class="toggle-button">
-				</div>
-				
-				<div class="np">
-					<span  style=" height: 14px;" >Заметка</span>
-				
-																<textarea>
-																</textarea>
-				</div>
-					
-					
-					<div class="footer" style="padding-left: 80px; padding-right: 70px;  display: grid;  grid-template-columns: 1fr 1fr; gap: 30px;  padding-top: 20px; padding-bottom: 50px;">
-			<button> Сохранить как шаблон </button>
-			<button> Создать профиль </button>
-			</div>
-			
-			
-			</div>
-			
-			
-			
-			
-			<!-- </div> -->
-			</div>
-			 
-			 
-			 
-			<!-- Из шаблона  -->
-			<div class="collapse multi-collapse" id="ft">
-			Из шаблона
-			</div>
-			
-			
-			<!-- Из шаблона  -->
-			<div class="collapse multi-collapse" id="mi">
-			Массовый импорт
-			</div>
-			  
-			</ul>
-			
-		<script>
-		function test(){
-		document.getElementById("ft").classList.remove("show");
-		document.getElementById("mi").classList.remove("show");
-		document.getElementById("newp").classList.add("show");
-		
-		
-		}
-		function test1(){
-		document.getElementById("ft").classList.add("show");
-		document.getElementById("mi").classList.remove("show");
-		document.getElementById("newp").classList.remove("show");
-		
-		
-		}
-		function test2(){
-		document.getElementById("ft").classList.remove("show");
-		document.getElementById("mi").classList.add("show");
-		document.getElementById("newp").classList.remove("show");
-		
-		
-		}
-		</script>
-	
-	
-
-	
-
-	
-	
+    <!-- Custom Theme JavaScript -->
+    <script src="/static/dist/js/sb-admin-2.js"></script>
 
 </body>
 

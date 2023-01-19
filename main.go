@@ -21,7 +21,7 @@ var pwd, _ = os.Getwd()
 
 func Home(w http.ResponseWriter, r *http.Request) {
 
-	tmpl, err := template.ParseFiles(pwd + "/template/index.html", pwd + "/template/leftMenu.html")
+	tmpl, err := template.ParseFiles(pwd + "/template/index.html", pwd + "/template/menu/leftMenu.html", pwd + "/template/content/content.html")
 	fmt.Println(err)
 	tmpl.ExecuteTemplate(w, "main", nil)
 
