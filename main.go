@@ -6,8 +6,9 @@ import (
 	"log"
 	"net/http"
 	"os"
-	//"strings"
-	
+	"strings"
+	"strconv"
+	"time"
 	//"database/sql"
 	//_ "github.com/go-sql-driver/mysql"
 	//"github.com/go-rod/rod"
@@ -18,6 +19,27 @@ import (
 )
 
 var pwd, _ = os.Getwd()
+
+type runStruct struct{
+	Scope     []string
+	UsersMax  int
+
+}
+
+
+func run(data runStruct){
+
+	for i := 0; i < data.UsersMax; i++ {
+		fmt.Printf("%T\n", data.Scope)
+		fmt.Printf("%T\n", data.UsersMax)
+		time.Sleep(60 * time.Second)
+	}
+	
+
+
+}
+
+
 
 func Home(w http.ResponseWriter, r *http.Request) {
 
@@ -36,6 +58,25 @@ func HomePOST(w http.ResponseWriter, r *http.Request) {
 		
 }
 
+func AddGet(w http.ResponseWriter, r *http.Request) {
+
+	tmpl, err := template.ParseFiles(pwd + "/template/index.html", pwd + "/template/menu/leftMenu.html", pwd + "/template/content/add.html", pwd + "/template/menu/mainMenu.html")
+	fmt.Println(err)
+	tmpl.ExecuteTemplate(w, "main", nil)
+
+}
+
+func AddPost(w http.ResponseWriter, r *http.Request) {
+	users, _ := strconv.Atoi(r.FormValue("users"))
+	scope := r.FormValue("scope")
+	scopeArr := strings.Split(scope, ",")
+
+	go run(runStruct{scopeArr, users})
+	tmpl, err := template.ParseFiles(pwd + "/template/index.html", pwd + "/template/menu/leftMenu.html", pwd + "/template/content/add.html", pwd + "/template/menu/mainMenu.html")
+	fmt.Println(err)
+	tmpl.ExecuteTemplate(w, "main", nil)
+
+}
 
 
 func main() {
@@ -60,6 +101,8 @@ func main() {
 	//Домашняя страница
 	r.HandleFunc("/", Home).Methods("GET")
 	r.HandleFunc("/", HomePOST).Methods("POST")
+	r.HandleFunc("/add", AddGet).Methods("GET")
+	r.HandleFunc("/add", AddPost).Methods("POST")
 
 	//Подключаем структуры
 	fs := http.FileServer(http.Dir("./static/"))

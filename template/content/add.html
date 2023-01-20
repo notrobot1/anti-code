@@ -1,0 +1,58 @@
+{{define "content"}}
+
+<div class="col-lg-12">
+
+	<div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                           Create project
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <form method="POST" id="create" role="form">
+                                        <div class="form-group">
+                                            <label>Url</label>
+                                            <input name="url" class="form-control">
+                                            <p class="help-block">Specify the address of the tested resource.</p>
+                                        </div>
+                                       
+                                        <div class="form-group">
+                                            <label>Cookies</label>
+                                            <textarea name="cookies" class="form-control" rows="3">Cookie: key=value; key2=value;</textarea>
+                                        </div>
+										
+										
+                                        <div class="form-outline">
+											<input type="number" name="users" class="form-control" />
+											<label class="form-label" for="typeNumber">Maximum number of users</label>
+										</div>
+										
+                                        <button type="submit" class="btn btn-default">Save</button>
+                                        <button type="submit" class="btn btn-default">Save and start</button>
+                                    </form>
+                                </div>
+                                <!-- /.col-lg-6 (nested) -->
+                                <div class="col-lg-6">
+                                    <h1>In scope</h1>
+                                    <form role="form">
+                                         <div class="form-group">
+                                            <label>List of tested links</label>
+                                            <textarea form="create" name="scope" class="form-control" rows="3">http://localhost/admin,http://localhost/home</textarea>
+                                        </div>
+                                    </form>
+                                    
+                                </div>
+                                <!-- /.col-lg-6 (nested) -->
+                            </div>
+                            <!-- /.row (nested) -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+ 
+</div>
+<!-- /.col-lg-12 -->
+				
+{{end}}
